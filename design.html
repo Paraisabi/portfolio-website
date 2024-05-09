@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+        <title>Bodies</title>
+        <link rel="stylesheet" href="assets/styles.css">
+
+        <link rel="icon" type="image/x-icon" href="assets/imgs/BODIES_of_[ART].jpg">
+        <link rel="apple-touch-icon" type="image/x-icon" href="assets/imgs/BODIES_of_[ART].jpg">
+
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/brushfire">
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/capture-it">
+
+        <style>
+            * {box-sizing:border-box}
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Hide the images by default */
+            .mySlides {
+                display: none;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav height=20%>
+            <span class="logo">
+                <h1>
+                    <a href="index.html"><img src="assets/imgs/BODIES_of_[ART].jpg" height=75px width=75px margin=10px alt="[BoA Logo]">&nbsp;Bodies of [Design]</a>
+                </h1>
+            </span>   
+
+            <!-- This is where the Menus to different pages on the head of the site -->
+            <menu id="main-menu" class="display-none-mobile display-flex">
+                <li class="dropdown-trigger">
+                    <button>Teams</button>
+                    <menu class="dropdown-menu">
+                        <li><a href="art.html">Art</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="design.html">Design</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+            </menu>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <!-- <script src="assets/js/script.js"></script> -->
+
+        <center>
+            <h2>
+                Bodies of [Design] focuses on being commisioned by outsied organizations and agencies. The [Design] team ischaracterized by their posters, websites, logos, and other digital artworks.            </h2>
+            </h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="assets/imgs/Alchemy_Illustration.jpg" alt="Alchemy Illustration" style="width:100%">
+                </div>
+  
+                <div class="mySlides fade">
+                    <img src="assets/imgs/TCNJ_MAG.jpg" alt="TCNJ Magazine" style="width:100%">
+                </div>
+  
+                <div class="mySlides fade">
+                    <img src="assets/imgs/BrewHaha_Logo(Line).jpg" style="width:100%">
+                </div>
+  
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+  
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+            </script>
+        </center>
+
+    </body>
+</html>

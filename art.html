@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+        <title>Bodies</title>
+        <link rel="stylesheet" href="assets/styles.css">
+
+        <link rel="icon" type="image/x-icon" href="assets/imgs/BODIES_of_[ART].jpg">
+        <link rel="apple-touch-icon" type="image/x-icon" href="assets/imgs/BODIES_of_[ART].jpg">
+
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/brushfire">
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/capture-it">
+    </head>
+
+    <body>
+        <nav height=20%>
+            <span class="logo">
+                <h1>
+                    <a href="index.html"><img src="assets/imgs/BODIES_of_[ART].jpg" height=75px width=75px margin=10px alt="[BoA Logo]">&nbsp;Bodies of [Art]</a>
+                </h1>
+            </span>   
+
+            <!-- This is where the Menus to different pages on the head of the site -->
+            <menu id="main-menu" class="display-none-mobile display-flex">
+                <li class="dropdown-trigger">
+                    <button>Teams</button>
+                    <menu class="dropdown-menu">
+                        <li><a href="art.html">Art</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="design.html">Design</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+            </menu>
+        </nav>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+
+        <center>
+            <h2>
+                Bodies of [Art] focuses on public works, installations, partnerships with museums, and galleries. The [Art] team is characterized by their physical, traditional art such as sculptures, paintings, sketches, and the like. The team's works dates back to 2018."            </h2>
+        </center>
+
+            <!-- Image container of the image slider -->
+        <center>
+            <div class="image-container">
+                <div class="slide">
+                    <img src="assets/imgs/Sunflowers_at_Dawn_Album.jpg" alt="Sunflowers At Dawn Album Cover">
+                    <section>
+                        <h3>
+                            "Sunflowers At Dawn" was a project in collaboration with Bodies of [Music] where the [Art] drew up an album cover for the first EP.
+                            The cover features a field of Sunflowers with an expansive background behind a center-focussed flower all draped over the light of "blue hour."
+                            While the album is not finalized, this was the first collaborative effort between two creative teams of the "Bodies Studio." 
+                        </h3>
+                    </section>
+    
+                </div>
+                <div class="slide">
+                    <img src="assets/imgs/Poppins_Poster.jpg" alt="Poppins Poster">
+                    <section>
+                        <h3>
+                            "Sunflowers At Dawn" was a project in collaboration with Bodies of [Music] where the [Art] drew up an album cover for the first EP.
+                            The cover features a field of Sunflowers with an expansive background behind a center-focussed flower all draped over the light of "blue hour."
+                            While the album is not finalized, this was the first collaborative effort between two creative teams of the "Bodies Studio." 
+                        </h3>
+                    </section>
+    
+                </div>
+                <div class="slide">
+                    <img src="assets/imgs/Alchemy_Illustration.jpg" alt="Alchemy Illustration">
+                    <section>
+                        <h3>
+                            "Sunflowers At Dawn" was a project in collaboration with Bodies of [Music] where the [Art] drew up an album cover for the first EP.
+                            The cover features a field of Sunflowers with an expansive background behind a center-focussed flower all draped over the light of "blue hour."
+                            While the album is not finalized, this was the first collaborative effort between two creative teams of the "Bodies Studio." 
+                        </h3>
+                    </section>
+    
+                </div>
+            </div>
+        </center>
+
+        <!-- Next and Previous icon to change images -->
+        <b class="previous" onclick="moveSlides(-1)">
+            <i class="fa fa-chevron-circle-left"></i>
+        </b>
+        <b class="next" onclick="moveSlides(1)">
+            <i class="fa fa-chevron-circle-right"></i>
+        </b>
+    </div>
+    <br>
+ 
+    <div style="text-align:center">
+        <span class="footerdot" onclick="activeSlide(1)">
+        </span>
+        <span class="footerdot" onclick="activeSlide(2)">
+        </span>
+        <span class="footerdot" onclick="activeSlide(3)">
+        </span>
+    </div>
+
+    </body>
+</html>
