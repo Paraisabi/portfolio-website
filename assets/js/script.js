@@ -28,7 +28,7 @@ function togglePopup() {
 }
 
 function redirect() {
-    location.replace("../../index.html");
+    location.replace("https://paraisabi.github.io/portfolio-website/");
 }
 // End of code for the "Music" page redirection  
 
