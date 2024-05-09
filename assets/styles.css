@@ -198,6 +198,19 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    font-family: 'Invade';
+    background-color: #687687;
+    color: #111910;
+    margin: 10px;
+    padding: 5px;
+    align-content: center;
+    width: 90%;
+    height: 90%;
+    align-content: center;
+    letter-spacing: 0px;
+    font-size: 18px;
+}
 .content { 
     position: absolute; 
     top: 50%; 
