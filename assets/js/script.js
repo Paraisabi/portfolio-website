@@ -31,9 +31,9 @@ function redirect() {
     location.replace("https://paraisabi.github.io/portfolio-website/");
 }
 
-setTimeout(function() {
-    redirect();
-}, 10000);
+// setTimeout(function() {
+//     redirect();
+// }, 10000);
 // End of code for the "Music" page redirection  
 
 // This chunk of code is for the "Design" page slideshow
